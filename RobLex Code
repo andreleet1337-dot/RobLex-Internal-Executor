@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Frame1 = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local UIGradient = Instance.new("UIGradient")
@@ -20,8 +21,11 @@ local UIGradient_5 = Instance.new("UIGradient")
 
 --Properties:
 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 Frame1.Name = "Frame1"
-Frame1.Parent = game.StarterGui.ScreenGui
+Frame1.Parent = ScreenGui
 Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame1.Position = UDim2.new(0.0961335301, 0, 0.182926819, 0)
@@ -30,11 +34,13 @@ Frame1.Size = UDim2.new(0.647931993, 0, 0.633468807, 0)
 TextBox.Parent = Frame1
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.ClipsDescendants = true
 TextBox.Position = UDim2.new(0.0120000262, 0, 0.066349782, 0)
 TextBox.Size = UDim2.new(0.469837844, 0, 0.914438486, 0)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSansItalic
-TextBox.Text = ""
+TextBox.MultiLine = true
+TextBox.Text = "-- Welcome to RobLex Internal Executor!\\n-- Made by Lua7x4x2x1.."
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 16.000
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
@@ -92,7 +98,7 @@ TextLabel.Parent = Frame1
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(-0.14132303, 0, -0.0320855603, 0)
+TextLabel.Position = UDim2.new(-0.124592021, 0, -0.0320855603, 0)
 TextLabel.Size = UDim2.new(0.400000006, 0, 0.133689836, 0)
 TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "RobLex"
@@ -120,7 +126,7 @@ UIGradient_5.Parent = Frame1
 
 -- Scripts:
 
-local function VQKXESV_fake_script() -- Frame1.LocalScript 
+local function MFYCKAI_fake_script() -- Frame1.LocalScript 
 	local script = Instance.new('LocalScript', Frame1)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -156,8 +162,8 @@ local function VQKXESV_fake_script() -- Frame1.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VQKXESV_fake_script)()
-local function WQOCEA_fake_script() -- Execute.LocalScript 
+coroutine.wrap(MFYCKAI_fake_script)()
+local function NUMIRMR_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
@@ -165,8 +171,8 @@ local function WQOCEA_fake_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(WQOCEA_fake_script)()
-local function LTYID_fake_script() -- Clear.LocalScript 
+coroutine.wrap(NUMIRMR_fake_script)()
+local function EBGHVKC_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
@@ -174,8 +180,8 @@ local function LTYID_fake_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(LTYID_fake_script)()
-local function ZLMUVVI_fake_script() -- Quit.Script 
+coroutine.wrap(EBGHVKC_fake_script)()
+local function TWEX_fake_script() -- Quit.Script 
 	local script = Instance.new('Script', Quit)
 
 	local Frame1 = script.Parent.Parent.Parent:FindFirstChild("Frame1")
@@ -185,8 +191,8 @@ local function ZLMUVVI_fake_script() -- Quit.Script
 	
 	
 end
-coroutine.wrap(ZLMUVVI_fake_script)()
-local function JUPGCDX_fake_script() -- UIGradient_5.LocalScript 
+coroutine.wrap(TWEX_fake_script)()
+local function RQLAT_fake_script() -- UIGradient_5.LocalScript 
 	local script = Instance.new('LocalScript', UIGradient_5)
 
 	local gradient = script.Parent
@@ -195,4 +201,4 @@ local function JUPGCDX_fake_script() -- UIGradient_5.LocalScript
 		gradient.Rotation += 0.5
 	end)
 end
-coroutine.wrap(JUPGCDX_fake_script)()
+coroutine.wrap(RQLAT_fake_script)()
