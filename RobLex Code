@@ -1,1 +1,226 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame1 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UIGradient = Instance.new("UIGradient")
+local Frame = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local Clear = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local Quit = Instance.new("TextButton")
+local UIGradient_5 = Instance.new("UIGradient")
+local UIGradient_6 = Instance.new("UIGradient")
+local Frame_2 = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame1.Name = "Frame1"
+Frame1.Parent = ScreenGui
+Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame1.Position = UDim2.new(0.0961335301, 0, 0.182926819, 0)
+Frame1.Size = UDim2.new(0.647931993, 0, 0.633468807, 0)
+
+TextBox.Parent = Frame1
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.ClipsDescendants = true
+TextBox.Position = UDim2.new(0.0120000262, 0, 0.066349782, 0)
+TextBox.Size = UDim2.new(0.469837844, 0, 0.914438486, 0)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSansItalic
+TextBox.MultiLine = true
+TextBox.Text = "-- Welcome to RobLex Internal Executor!\\n-- Made by Lua7x4x2x1.."
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 16.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(200, 200, 200)), ColorSequenceKeypoint.new(0.09, Color3.fromRGB(200, 200, 200)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.95, Color3.fromRGB(223, 223, 223)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(198, 198, 198))}
+UIGradient.Parent = TextBox
+
+Frame.Parent = Frame1
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.492393851, 0, 0.0641711205, 0)
+Frame.Size = UDim2.new(0.240640968, 0, 0.914438486, 0)
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0636942685, 0, 0.0409356728, 0)
+Execute.Size = UDim2.new(0.872611463, 0, 0.362573087, 0)
+Execute.Font = Enum.Font.ArialBold
+Execute.Text = "EXE"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 47.000
+Execute.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Execute
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(177, 177, 177)), ColorSequenceKeypoint.new(0.78, Color3.fromRGB(197, 197, 197)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = Frame
+Clear.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.0636942685, 0, 0.587719321, 0)
+Clear.Size = UDim2.new(0.872611463, 0, 0.368421048, 0)
+Clear.Font = Enum.Font.ArialBold
+Clear.Text = "CLEAR"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextSize = 36.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Clear
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.34, Color3.fromRGB(199, 199, 199)), ColorSequenceKeypoint.new(0.71, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(200, 200, 200))}
+UIGradient_3.Rotation = 90
+UIGradient_3.Parent = Clear
+
+TextLabel.Parent = Frame1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(-0.124592021, 0, -0.0320855603, 0)
+TextLabel.Size = UDim2.new(0.400000006, 0, 0.133689836, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "RobLex"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 26.000
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.35, Color3.fromRGB(192, 126, 234)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(67, 47, 85)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(103, 71, 140)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(45, 35, 59)), ColorSequenceKeypoint.new(0.78, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.88, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(44, 34, 56)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = TextLabel
+
+Quit.Name = "Quit"
+Quit.Parent = Frame1
+Quit.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+Quit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Quit.Position = UDim2.new(0.963999987, 0, 0, 0)
+Quit.Size = UDim2.new(0.0359999985, 0, 0.0454545468, 0)
+Quit.Font = Enum.Font.Arial
+Quit.Text = "X"
+Quit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Quit.TextScaled = true
+Quit.TextSize = 14.000
+Quit.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(152, 0, 0)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(244, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(134, 0, 0))}
+UIGradient_5.Parent = Quit
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(136, 128, 255)), ColorSequenceKeypoint.new(0.27, Color3.fromRGB(147, 138, 197)), ColorSequenceKeypoint.new(0.58, Color3.fromRGB(171, 129, 188)), ColorSequenceKeypoint.new(0.77, Color3.fromRGB(153, 116, 165)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(123, 94, 129))}
+UIGradient_6.Parent = Frame1
+
+Frame_2.Parent = Frame1
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.Position = UDim2.new(0.76319176, 0, 0.0641711205, 0)
+Frame_2.Size = UDim2.new(0.221364215, 0, 0.914438486, 0)
+
+-- Scripts:
+
+local function CKIFOQ_fake_script() -- Frame1.LocalScript 
+	local script = Instance.new('LocalScript', Frame1)
+
+	local UserInputService = game:GetService("UserInputService")
+	local gui = script.Parent -- Replace with your GUI element
+	local dragging = false
+	local dragStart
+	local startPos
+	-- Function to update the GUI position
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(
+			startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y
+		)
+	end
+	-- Detect when dragging starts
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	-- Detect when the mouse or touch moves
+	UserInputService.InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(CKIFOQ_fake_script)()
+local function YMBLYJJ_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
+	script.Parent.MouseButton1Click:Connect(function() 
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(YMBLYJJ_fake_script)()
+local function ZDJE_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
+	script.Parent.MouseButton1Click:Connect(function() 
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(ZDJE_fake_script)()
+local function OODX_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local gradient = script.Parent.Parent.Parent.Parent:WaitForChild("ScreenGui"):WaitForChild("Frame1"):WaitForChild("TextLabel"):WaitForChild("UIGradient")
+	local runService = game:GetService("RunService")
+	runService.RenderStepped:Connect(function() 
+		gradient.Rotation += 0.5
+	end)
+end
+coroutine.wrap(OODX_fake_script)()
+local function JGOC_fake_script() -- Quit.Script 
+	local script = Instance.new('Script', Quit)
+
+	local Frame1 = script.Parent.Parent.Parent:FindFirstChild("Frame1")
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame1:Destroy()
+	end)
+	
+	
+end
+coroutine.wrap(JGOC_fake_script)()
+local function TYOX_fake_script() -- UIGradient_6.LocalScript 
+	local script = Instance.new('LocalScript', UIGradient_6)
+
+	local gradient = script.Parent
+	local runService = game:GetService("RunService")
+	runService.RenderStepped:Connect(function() 
+		gradient.Rotation += 0.5
+	end)
+end
+coroutine.wrap(TYOX_fake_script)()
