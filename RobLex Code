@@ -19,7 +19,6 @@ local UIGradient_4 = Instance.new("UIGradient")
 local Quit = Instance.new("TextButton")
 local UIGradient_5 = Instance.new("UIGradient")
 local UIGradient_6 = Instance.new("UIGradient")
-local Frame_2 = Instance.new("Frame")
 
 --Properties:
 
@@ -32,7 +31,7 @@ Frame1.Parent = ScreenGui
 Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame1.Position = UDim2.new(0.0961335301, 0, 0.182926819, 0)
-Frame1.Size = UDim2.new(0.647931993, 0, 0.633468807, 0)
+Frame1.Size = UDim2.new(0.63542366, 0, 0.633468807, 0)
 
 TextBox.Parent = Frame1
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -130,15 +129,9 @@ UIGradient_5.Parent = Quit
 UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(136, 128, 255)), ColorSequenceKeypoint.new(0.27, Color3.fromRGB(147, 138, 197)), ColorSequenceKeypoint.new(0.58, Color3.fromRGB(171, 129, 188)), ColorSequenceKeypoint.new(0.77, Color3.fromRGB(153, 116, 165)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(123, 94, 129))}
 UIGradient_6.Parent = Frame1
 
-Frame_2.Parent = Frame1
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.Position = UDim2.new(0.76319176, 0, 0.0641711205, 0)
-Frame_2.Size = UDim2.new(0.221364215, 0, 0.914438486, 0)
-
 -- Scripts:
 
-local function CKIFOQ_fake_script() -- Frame1.LocalScript 
+local function ZVKSI_fake_script() -- Frame1.LocalScript 
 	local script = Instance.new('LocalScript', Frame1)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -174,8 +167,8 @@ local function CKIFOQ_fake_script() -- Frame1.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CKIFOQ_fake_script)()
-local function YMBLYJJ_fake_script() -- Execute.LocalScript 
+coroutine.wrap(ZVKSI_fake_script)()
+local function BBZBEEP_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
@@ -183,8 +176,8 @@ local function YMBLYJJ_fake_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(YMBLYJJ_fake_script)()
-local function ZDJE_fake_script() -- Clear.LocalScript 
+coroutine.wrap(BBZBEEP_fake_script)()
+local function ZIMFFIZ_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
@@ -192,8 +185,8 @@ local function ZDJE_fake_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(ZDJE_fake_script)()
-local function OODX_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(ZIMFFIZ_fake_script)()
+local function DPYNYB_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local gradient = script.Parent.Parent.Parent.Parent:WaitForChild("ScreenGui"):WaitForChild("Frame1"):WaitForChild("TextLabel"):WaitForChild("UIGradient")
@@ -202,8 +195,8 @@ local function OODX_fake_script() -- TextLabel.LocalScript
 		gradient.Rotation += 0.5
 	end)
 end
-coroutine.wrap(OODX_fake_script)()
-local function JGOC_fake_script() -- Quit.Script 
+coroutine.wrap(DPYNYB_fake_script)()
+local function PUBTC_fake_script() -- Quit.Script 
 	local script = Instance.new('Script', Quit)
 
 	local Frame1 = script.Parent.Parent.Parent:FindFirstChild("Frame1")
@@ -213,8 +206,8 @@ local function JGOC_fake_script() -- Quit.Script
 	
 	
 end
-coroutine.wrap(JGOC_fake_script)()
-local function TYOX_fake_script() -- UIGradient_6.LocalScript 
+coroutine.wrap(PUBTC_fake_script)()
+local function OXFG_fake_script() -- UIGradient_6.LocalScript 
 	local script = Instance.new('LocalScript', UIGradient_6)
 
 	local gradient = script.Parent
@@ -223,4 +216,4 @@ local function TYOX_fake_script() -- UIGradient_6.LocalScript
 		gradient.Rotation += 0.5
 	end)
 end
-coroutine.wrap(TYOX_fake_script)()
+coroutine.wrap(OXFG_fake_script)()
