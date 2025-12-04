@@ -15,14 +15,21 @@ local Clear = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
 local TextLabel = Instance.new("TextLabel")
-local Quit = Instance.new("TextButton")
 local UIGradient_4 = Instance.new("UIGradient")
+local Quit = Instance.new("TextButton")
 local UIGradient_5 = Instance.new("UIGradient")
+local UIGradient_6 = Instance.new("UIGradient")
+local Frame_2 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UIGradient_7 = Instance.new("UIGradient")
+local TextButton_2 = Instance.new("TextButton")
+local UIGradient_8 = Instance.new("UIGradient")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Frame1.Name = "Frame1"
 Frame1.Parent = ScreenGui
@@ -102,8 +109,11 @@ TextLabel.Position = UDim2.new(-0.124592021, 0, -0.0320855603, 0)
 TextLabel.Size = UDim2.new(0.400000006, 0, 0.133689836, 0)
 TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "RobLex"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 26.000
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.35, Color3.fromRGB(192, 126, 234)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(67, 47, 85)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(103, 71, 140)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(45, 35, 59)), ColorSequenceKeypoint.new(0.78, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.88, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(44, 34, 56)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = TextLabel
 
 Quit.Name = "Quit"
 Quit.Parent = Frame1
@@ -118,15 +128,49 @@ Quit.TextScaled = true
 Quit.TextSize = 14.000
 Quit.TextWrapped = true
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(152, 0, 0)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(244, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(134, 0, 0))}
-UIGradient_4.Parent = Quit
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(152, 0, 0)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(244, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(134, 0, 0))}
+UIGradient_5.Parent = Quit
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(136, 128, 255)), ColorSequenceKeypoint.new(0.27, Color3.fromRGB(147, 138, 197)), ColorSequenceKeypoint.new(0.58, Color3.fromRGB(171, 129, 188)), ColorSequenceKeypoint.new(0.77, Color3.fromRGB(153, 116, 165)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(123, 94, 129))}
-UIGradient_5.Parent = Frame1
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(136, 128, 255)), ColorSequenceKeypoint.new(0.27, Color3.fromRGB(147, 138, 197)), ColorSequenceKeypoint.new(0.58, Color3.fromRGB(171, 129, 188)), ColorSequenceKeypoint.new(0.77, Color3.fromRGB(153, 116, 165)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(123, 94, 129))}
+UIGradient_6.Parent = Frame1
+
+Frame_2.Parent = Frame1
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.Position = UDim2.new(0.76319176, 0, 0.0641711205, 0)
+Frame_2.Size = UDim2.new(0.221364215, 0, 0.914438486, 0)
+
+TextButton.Parent = Frame_2
+TextButton.BackgroundColor3 = Color3.fromRGB(223, 223, 223)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0465116277, 0, 0.0409356728, 0)
+TextButton.Size = UDim2.new(0.906976759, 0, 0.105263159, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Infinite Yield"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(126, 126, 126))}
+UIGradient_7.Parent = TextButton
+
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(223, 223, 223)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0465116277, 0, 0.236842111, 0)
+TextButton_2.Size = UDim2.new(0.906976759, 0, 0.105263159, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Dex - Dark Explorer"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 190, 190)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(229, 229, 229)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(131, 131, 131))}
+UIGradient_8.Parent = TextButton_2
 
 -- Scripts:
 
-local function MFYCKAI_fake_script() -- Frame1.LocalScript 
+local function VAHS_fake_script() -- Frame1.LocalScript 
 	local script = Instance.new('LocalScript', Frame1)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -162,8 +206,8 @@ local function MFYCKAI_fake_script() -- Frame1.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MFYCKAI_fake_script)()
-local function NUMIRMR_fake_script() -- Execute.LocalScript 
+coroutine.wrap(VAHS_fake_script)()
+local function OIHLQ_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
@@ -171,8 +215,8 @@ local function NUMIRMR_fake_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(NUMIRMR_fake_script)()
-local function EBGHVKC_fake_script() -- Clear.LocalScript 
+coroutine.wrap(OIHLQ_fake_script)()
+local function XVJRERP_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local textbox = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
@@ -180,8 +224,18 @@ local function EBGHVKC_fake_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(EBGHVKC_fake_script)()
-local function TWEX_fake_script() -- Quit.Script 
+coroutine.wrap(XVJRERP_fake_script)()
+local function NTFYD_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local gradient = script.Parent.Parent.Parent.Parent:WaitForChild("ScreenGui"):WaitForChild("Frame1"):WaitForChild("TextLabel"):WaitForChild("UIGradient")
+	local runService = game:GetService("RunService")
+	runService.RenderStepped:Connect(function() 
+		gradient.Rotation += 0.5
+	end)
+end
+coroutine.wrap(NTFYD_fake_script)()
+local function SUAKDW_fake_script() -- Quit.Script 
 	local script = Instance.new('Script', Quit)
 
 	local Frame1 = script.Parent.Parent.Parent:FindFirstChild("Frame1")
@@ -191,9 +245,9 @@ local function TWEX_fake_script() -- Quit.Script
 	
 	
 end
-coroutine.wrap(TWEX_fake_script)()
-local function RQLAT_fake_script() -- UIGradient_5.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_5)
+coroutine.wrap(SUAKDW_fake_script)()
+local function XIIXDOW_fake_script() -- UIGradient_6.LocalScript 
+	local script = Instance.new('LocalScript', UIGradient_6)
 
 	local gradient = script.Parent
 	local runService = game:GetService("RunService")
@@ -201,4 +255,22 @@ local function RQLAT_fake_script() -- UIGradient_5.LocalScript
 		gradient.Rotation += 0.5
 	end)
 end
-coroutine.wrap(RQLAT_fake_script)()
+coroutine.wrap(XIIXDOW_fake_script)()
+local function SLEIJJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local box = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
+	script.Parent.MouseButton1Click:Connect(function() 
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
+	end)
+end
+coroutine.wrap(SLEIJJ_fake_script)()
+local function AQTQ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local box = script.Parent.Parent.Parent.Parent:WaitForChild("Frame1"):WaitForChild("TextBox")
+	script.Parent.MouseButton1Click:Connect(function() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BigBoyTimme/New.Loadstring.Scripts/refs/heads/main/Dex.Explorer"))()
+	end)
+end
+coroutine.wrap(AQTQ_fake_script)()
